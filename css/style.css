@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@keyframes appear-out-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-5rem); }
+  80% {
+    opacity: 1;
+    transform: translateX(0.5rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes appear-out-right {
+  0% {
+    opacity: 0;
+    transform: translateX(5rem); }
+  80% {
+    opacity: 1;
+    transform: translateX(-0.5rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes appear-out-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem); }
+  80% {
+    opacity: 1;
+    transform: translateY(-0.5rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #f7f7f7;
+  color: #777777;
+  font-family: "Lato", sans serif;
+  font-size: 100%;
+  font-weight: normal;
+  font-style: normal;
+  padding: 2rem;
+  margin-bottom: 12rem; }
+
+.section--title {
+  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
+  color: transparent;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 auto;
+  text-transform: uppercase;
+  -webkit-background-clip: text; }
+
+.section--subtitle {
+  color: #777777;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.section--text {
+  color: #777777; }
+
+.btn {
+  appearance: none;
+  border: 0.125rem solid transparent;
+  border-radius: 4rem;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  outline: none;
+  transition: all 0.3s ease-in-out; }
+  .btn:hover {
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.32);
+    scale: 1.1;
+    transform: translateY(-0.5rem); }
+  .btn:focus {
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.24);
+    transform: translateY(-0.125rem); }
+  .btn--white {
+    background-color: #ffffff;
+    color: #777777; }
+  .btn--green {
+    background-color: #28b485;
+    color: #ffffff; }
+
+.header {
+  align-items: center;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../../assets/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  height: 95vh;
+  padding: 2rem;
+  position: relative; }
+  .header__logo-box {
+    left: 2rem;
+    top: 2rem;
+    position: absolute; }
+    .header__logo-box--logo {
+      height: 2rem; }
+  .header__content {
+    color: #ffffff;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    top: 40%; }
+    .header__content--title {
+      animation: appear-out-left 2s;
+      font-size: 4rem;
+      font-weight: 400;
+      letter-spacing: 2rem; }
+    .header__content--text {
+      animation: appear-out-right 2s;
+      font-size: 1.25rem;
+      font-weight: 400;
+      letter-spacing: 1rem;
+      margin-top: 1rem; }
+    .header__content--btn {
+      animation: appear-out-bottom 2s;
+      margin-top: 3.5rem; }
+
+.section {
+  display: flex;
+  margin-top: 4rem;
+  flex-direction: column; }
+
+.section-natours {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0 4rem;
+  column-gap: 4rem;
+  margin-top: 8rem; }
+  .section-natours__texts-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; }
+  .section-natours__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: justify; }
+  .section-natours__pictures {
+    position: relative;
+    height: 100%; }
+    .section-natours__pictures img {
+      border: none;
+      outline: 0.5rem solid transparent;
+      outline-offset: 1rem;
+      border-radius: 0.25rem;
+      box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.24);
+      transition: all 0.2s ease-in-out; }
+      .section-natours__pictures img:hover {
+        outline-color: #55c57a;
+        scale: 1.1;
+        z-index: 1; }
+    .section-natours__pictures--1 {
+      position: absolute;
+      top: -2rem; }
+    .section-natours__pictures--2 {
+      position: absolute;
+      top: 2rem;
+      left: 16rem; }
+    .section-natours__pictures--3 {
+      position: absolute;
+      top: 6rem;
+      left: 5rem; }

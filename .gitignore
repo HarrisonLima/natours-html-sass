@@ -1,0 +1,61 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore environment variable files
+.env
+.env.test
+
+# Ignore npm package lock files
+package-lock.json
+yarn.lock
+
+# Ignore editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore build output
+dist/
+build/
+
+# Ignore coverage directory
+coverage/
+
+# Ignore temporary files
+tmp/
+temp/
+
+# Ignore dependency directories
+jspm_packages/
+
+# Ignore TypeScript cache
+*.tsbuildinfo
+
+# Ignore optional npm cache directory
+.npm/
+
+# Ignore ESLint cache
+.eslintcache
+
+# Ignore Parcel cache
+.cache/
+
+# Ignore Storybook build output
+out/
+
+# Ignore Husky hooks
+.husky/_/

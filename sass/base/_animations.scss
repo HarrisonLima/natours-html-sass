@@ -1,0 +1,44 @@
+@keyframes appear-out-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-5rem);
+}
+80% {
+    opacity: 1;
+    transform: translateX(.5rem);
+}
+100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes appear-out-right {
+  0% {
+    opacity: 0;
+    transform: translateX(5rem);
+}
+80% {
+    opacity: 1;
+    transform: translateX(-.5rem);
+}
+100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes appear-out-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+}
+80% {
+    opacity: 1;
+    transform: translateY(-.5rem);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
