@@ -1,11 +1,7 @@
 .header {
   align-items: center;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.8)
-    ),
-    url("../../assets/hero.jpg");
+  background-image: linear-gradient(to right bottom, $color-primary-gradient),
+    url("../../assets/images/hero.jpg");
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -31,13 +27,6 @@
     text-transform: uppercase;
     transform: translate(-50%, -50%);
     top: 40%;
-
-    &--title {
-      animation: appear-out-left 2s;
-      font-size: 4rem;
-      font-weight: 400;
-      letter-spacing: 2rem;
-    }
 
     &--text {
       animation: appear-out-right 2s;
