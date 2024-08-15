@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: $font-primary;
   margin: 0;
   padding: 0;
 }
@@ -9,12 +10,11 @@
 body {
   background-color: $color-gray-50;
   color: $color-gray-500;
-  font-family: $font-primary;
   font-size: 100%;
   font-weight: normal;
   font-style: normal;
   padding: 2rem;
-  margin-bottom: 12rem;
+  padding-bottom: 0;
 }
 
 ::selection {

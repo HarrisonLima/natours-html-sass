@@ -1,0 +1,53 @@
+.natours {
+  &__texts-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: justify;
+  }
+
+  &__link {
+    align-items: start;
+    display: flex;
+  }
+
+  &__pictures {
+    position: relative;
+    height: 100%;
+
+    img {
+      border: none;
+      outline: 0.5rem solid transparent;
+      border-radius: 0.25rem;
+      box-shadow: 0 0.25rem 1rem rgba($color-black, 0.24);
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        outline-color: $color-primary;
+        scale: 1.1;
+        z-index: 1;
+      }
+    }
+
+    &--1 {
+      position: absolute;
+      top: -2rem;
+    }
+    &--2 {
+      position: absolute;
+      top: 2rem;
+      left: 16rem;
+    }
+    &--3 {
+      position: absolute;
+      top: 6rem;
+      left: 5rem;
+    }
+  }
+}

@@ -5,8 +5,14 @@
 @import "base/base";
 @import "base/typography";
 
-@import "components/button.scss";
+@import "components/button";
+@import "components/cards";
+@import "components/feedback";
+@import "components/form";
+@import "components/natours";
+@import "components/purchase";
 
 @import "layout/header";
+@import "layout/footer";
 
 @import "pages/home";
